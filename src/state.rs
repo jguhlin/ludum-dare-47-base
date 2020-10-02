@@ -78,7 +78,7 @@ pub fn init_game_state() {
     }
 
     match WORLD.set(Arc::new(RwLock::new(World::new()))) {
-        Err(x) => panic!("Unable to set world..."),
+        Err(_x) => panic!("Unable to set world..."),
         Ok(()) => (),
     };
     //        .expect("Unable to set World");
