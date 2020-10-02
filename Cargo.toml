@@ -1,0 +1,28 @@
+[package]
+name = "ludum-dare-47-base"
+version = "0.1.0"
+authors = ["jguhlin <joseph.guhlin@gmail.com>"]
+edition = "2018"
+
+# Use a binary for some outside-of-godot logic testing..
+[[bin]]
+name = "somebinary"
+path = "src/main.rs"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+
+gdnative = "0.9.0"
+rand = "0.7.3"
+rand_xoshiro = "0.4.0"
+once_cell = "1.4.1"
+strum = "0.19"
+strum_macros = "0.19"
+num = "0.3.0"
+num-traits = "0.2"
+num-derive = "0.3"
+crossbeam = "0.7.3"
+mimalloc = { version = "*", default-features = false }
+hecs = "0.2.15"

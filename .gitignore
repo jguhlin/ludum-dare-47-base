@@ -1,0 +1,6 @@
+/target
+*.log
+*.png
+*.gif
+/assets
+Cargo.lock
